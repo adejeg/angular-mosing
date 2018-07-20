@@ -1,0 +1,411 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+	margin:0px;
+	padding: 0px;
+	/*font-size: 100%;*/
+	font-family: 'Proxima Nova Soft','Helvetica Neue',sans-serif;
+}
+*{
+	box-sizing: border-box;
+}
+
+img, embed, object, video{
+	max-width: 100%;
+}
+#wrapper{
+	width: 100%;
+}
+.row{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+/*Header Section*/
+.logo{
+	padding: 0px 20px 0px 20px;
+	/*width: 22em;*/
+}
+
+.admin-logo{
+	background-color: #7CBB00;
+	box-shadow: 10px 10px 10px #ccc;
+	text-shadow: 2px 2px 2px #ffffff;
+}
+
+.logo a{
+	display: inline;
+}
+.logo-head{
+	margin: 0px;
+	font-size: 5em;
+	font-weight: 1000;
+	color: blue;
+}
+.logo-head span{
+	color: red;
+	font-weight: lighter;
+}
+
+.logo-head:hover{
+	color: blue;
+}
+
+.logo-text{
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	font-family: 'Segoe UI',Arial,sans-serif;
+	color: #000000;
+	transition: 0.5s;
+	margin-top: 4em;
+	font-size: 1.2em;
+}
+@media (max-width: 991px){
+	.logo-text {
+	    margin-top: 0em;
+	}
+}
+
+/*Navigation begins*/
+.nav-bar{
+	display: inline;
+	background-color: #7CBB00; 
+}
+.nav-bar a{
+	float: left;
+	padding: 14px 20px;
+	font-size: 1em;
+	border-bottom: 3px solid #7CBB00; 
+	transition: 1s;
+}
+.nav-bar a:hover{
+	background-color: blue;
+	color: white;
+	border-bottom: 3px solid red;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.nav-bar input[type=text] {
+    float: right;
+    width: 20em;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    padding: 14px 20px;
+	border-bottom: 3px solid #7CBB00; 
+}
+.action{
+	background-color: #7CBB00;
+	color: white;
+}
+/*End Navigation*/
+.video_ad{
+	width: 100%;
+	height: 100%;
+	margin-left: 0px;
+
+}
+.video_ad video{
+	width: 100%;
+}
+.video-text{
+	background-color: #000000;
+	opacity: 0.4;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+	text-align: center;
+	padding: 25% 25%;
+}
+
+/*End Header Section*/
+
+/*Begin Content Section*/
+.content-nav{
+	border-left: 5px solid #7CBB00;
+	border-right: 5px solid #7CBB00;
+	padding: 20px;
+}
+
+.content-nav a{
+	display: block;
+	border-bottom: 3px dotted #7CBB00;
+	padding: 5px 0px 5px 0px;
+	transition: 0.5s;
+}
+/*End Content Section*/
+
+/*begin song page*/
+/*song header*/
+.image_ad{
+	background-image: url("assets/benny_praise.jpg");
+	height: 20em;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*position: relative;*/
+}
+/*end song header*/
+
+/*begin song content*/
+.song-container{
+	border-left: 5px solid #7CBB00;
+	border-right: 5px solid #7CBB00;
+}
+.song-content{
+	padding: 20px;
+	border-bottom: 3px dotted #7CBB00;
+}
+.song{
+	float: left;
+	margin-right: 10px;
+}
+.song a{
+	font-size: 0.8em;
+	background-color: #4285F4;
+	color: white;
+	padding: 8px;
+	border: 2px solid #EA4335;
+	border-radius: 10px;
+	text-decoration: none;
+}
+/*end song content*/
+/*end song page*/
+
+/*Begin Admin View*/
+.menu-icon{
+	display: inline-block;
+	cursor: pointer;
+	margin: 10px 10px;
+}
+
+.bar1, .bar2, .bar3{
+	width: 25px;
+	height: 3px;
+	background-color: blue;
+	margin: 3px;
+	transition: 0.5s;
+}
+
+.sidenav{
+	width: 0px;
+	height: 100%;
+	left: 0;
+	background-color: #7CBB00;
+	padding-top: 60px;
+	transition: 0.5s;
+	display: inline-block;
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.sidenav a{
+	padding: 8px 8px 8px 16px;
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: #ffffff;
+	display: block;
+	transition: 0.3s;
+	border-bottom: 1px solid white;
+}
+.sidenav a:hover{
+	background-color: #99ff00;
+}
+
+.sidenav-profile{
+	background-color: #F0FFF0;
+	padding: 0.6em;
+	margin-bottom: 1em;
+}
+
+.sidenav-profile span{
+	font-weight: bolder;
+}
+
+#content-control{
+	padding: 1em;
+	width: 100%;
+	overflow: auto;
+}
+#main{
+	width: 100%;
+	display: inline-block;
+	transition: margin-left .5s;
+	overflow: auto;
+}
+
+
+@media screen and(min-width: 700px){
+	.sidenav{
+		display: none;
+	}
+}
+.admin-logo{
+	background-color: #7CBB00;
+	box-shadow: 10px 10px 10px #ccc;
+	text-shadow: 2px 2px 2px #ffffff;
+	z-index: 1;
+	width: 100%;
+}
+
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
+	background-color: #ffffff;
+}
+
+th, td{
+	text-align: center;
+	padding: 16px;
+}
+
+th:first-child, td:first-child{
+	text-align: left;
+}
+
+tr:nth-child(even){
+	background-color: #00BFFF;
+}
+#searchInput{
+	/* background-image: url('../admin/images/searchicon.png'); */
+	background-position: 10px 12px;
+	background-repeat: no-repeat;
+	border: 1px solid #ddd;
+	margin: 12px 0px;
+	padding: 12px 20px 12px 40px;
+}
+.upload-form{
+	background-color: #ffffff;
+	padding: 1em;
+	border-radius: 0.5em;
+	margin: 1em;
+}
+
+#songCounter{
+	background-color: #FF4500;
+	color: #ffffff;
+	min-height: 100px;
+}
+#songCounter h3{
+	bottom: 0px;
+	padding: 10px;
+}
+
+input[type=text], select, textarea{
+	width: 100%;
+	padding: 12px;
+	box-sizing: border-box;
+	resize: vertical; 
+	margin-bottom: 1em;
+}
+
+/*Begin User Profile*/
+.song-table{
+	width: 100%;
+	background-color: red;
+	color: white;
+	padding: 15px;
+	font-size: 1.3em;
+}
+
+.user-profile{
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.4s;
+	background-color: #ffffff;
+	max-width: 25em;
+	border-radius: 1em;
+	margin: 1em;
+}
+.user-profile:hover{
+	box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);
+	margin-bottom: 10px;
+}
+.user-details{
+	padding: 2px 16px;
+}
+
+.image-upload{
+	margin: 10px;
+	background-color: #ffffff;
+	text-align: center;
+	width: 100%;
+	max-width: 25em;
+}
+
+.image-holder{
+	width: 100%;
+	width: 100%;
+	max-width: 25em;
+}
+.image-form{
+	padding: 10px;
+}
+
+.image-form div{
+	margin: 10px;
+}
+
+/*End Admin View*/
+
+/*Footer Section*/
+footer.logo-head{
+	margin: 0px;
+	font-weight: 500;
+	color: blue;
+}
+footer.logo-head span{
+	color: red;
+	font-weight: lighter;
+}
+footer.logo-head:hover{
+	color: blue;
+}
+/*End Footer Section*/
+@media screen and (max-width: 600px){
+	.logo a{
+		display: block;
+	}
+	
+	.nav-bar a{
+		font-size: 1em;
+		padding: 0px 5px;
+		border-right: 1px dashed #7CBB00;
+	}
+	.song a{
+		font-size: 1em;
+	}
+	.logo-text{
+		font-size: 1em;
+		letter-spacing: 4px;
+	}
+	.nav-bar input[type=text] {
+	    font-size: 1em;
+	    padding: 5px;
+	}
+	.song a{
+		display: inline-block;
+		padding: 4px;
+		border: none;
+		margin: 5px;
+	}
+}
+
+/*Login Form*/
+.login_form{
+	position: absolute;
+	margin-left: 50%;
+	margin-top: 50%;
+	transform: translate(-50%, -50%);
+}

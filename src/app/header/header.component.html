@@ -1,0 +1,66 @@
+<!-- <header>
+  <div class="row">
+    <div class="col-md-8">
+      <a href="#">mo<span>sing</span></a>
+    </div>
+    <div class="col-md-4">
+      <p>WORLD LARGEST MUSIC REPO</p>
+    </div>
+  </div>
+  <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button navbarToggle class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">0-9</a></li>
+            <li><a href="#">a-b-c</a></li>
+            <li><a href="#">d-e-f</a></li>
+            <li><a href="#">g-h-i</a></li>
+            <li><a href="#">j-k-l</a></li>
+            <li><a href="#">m-n-o</a></li>
+            <li><a href="#">p-q-r</a></li>
+            <li><a href="#">s-t-u</a></li>
+            <li><a href="#">v-w-x</a></li>
+            <li><a href="#">y-z</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" action="/action_page.php">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+</header> -->
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">
+              LOGO
+            </a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{exact: true}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a routerLinkActive="active" routerLink="/add-song"><span class="glyphicon glyphicon-music"></span> Add Songs</a></li>
+            <li><a routerLinkActive="active" routerLink="songs"><span class="glyphicon glyphicon-music"></span> Songs</a></li>
+            <li class="dropdown" dropdown>
+                <a dropdownToggle role="button">
+                  <span class="glyphicon glyphicon-user"></span> Account <span class="caret"></span>
+                </a>
+                <ul *dropdownMenu class="dropdown-menu">
+                    <li><a routerLinkActive="active" routerLink="/login">Login</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a routerLinkActive="active" routerLink="register">Register</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
